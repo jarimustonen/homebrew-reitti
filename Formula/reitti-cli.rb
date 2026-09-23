@@ -1,19 +1,19 @@
 class ReittiCli < Formula
   desc "Agent-first command-line journey planner for the HSL service area"
   homepage "https://github.com/jarimustonen/reitti-cli"
-  version "1.0.0"
+  version "1.1.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.0.0/reitti-cli-aarch64-apple-darwin.tar.xz"
-    sha256 "5aa03c484152ad70e9e711c9372d39d76d715b28d34701e481289793081bdb27"
+    url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.1.0/reitti-cli-aarch64-apple-darwin.tar.xz"
+    sha256 "45ef8ec867916b04154bfb8b5c7e67a901ee4b263b42efc4162d4238ac99ad8a"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.0.0/reitti-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "528c86fa641d3cabd76507fc2e922f016798eb692f3f290a35c83ef39f107c04"
+      url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.1.0/reitti-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "879d82cc8cec1a0251a7d2aef854b5bd02074c8b5e4688892724247f01f60234"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.0.0/reitti-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "4c827db56debda07e3635e610ccbdb843e15a2bb7f770e43935bf33dde26e214"
+      url "https://github.com/jarimustonen/reitti-cli/releases/download/v1.1.0/reitti-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "e4493a102f1d2bcd80ed9e3b4756b4219ac5c30fd8d370e822d529a32bcec107"
     end
   end
   license "MIT"
